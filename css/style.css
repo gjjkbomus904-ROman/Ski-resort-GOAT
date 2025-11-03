@@ -143,22 +143,22 @@
 
 .main {
   text-align: center;
-  background-image: url('../photos/csm_Gletscherfeeling_Moelltaler_0801_b5dd612600.jpg');
+  background-image: url('./photos/csm_Gletscherfeeling_Moelltaler_0801_b5dd612600.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* 🔹 Фиксированный фон */
+  background-attachment: fixed;
   color: white;
   padding: 60px 20px;
 }
 
-/* Заголовок */
+
 .maintitle {
   font-size: 3em;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
   margin: 0;
 }
 
-/* Подзаголовок */
+
 .mainsubtitle {
   font-size: 1.2em;
   text-shadow: 3px 3px 6px rgba(0,0,0,0.6);
@@ -172,9 +172,6 @@
   border-radius: 7px;
 }
 
-/* --- Адаптивность --- */
-
-/* Планшеты */
 @media (max-width: 992px) {
   .maintitle {
     font-size: 2.4em;
@@ -186,11 +183,11 @@
   }
 }
 
-/* Телефоны */
+
 @media (max-width: 600px) {
   .main {
     padding: 40px 10px;
-    background-attachment: scroll; /* ⚠️ Для мобильных — отключаем fixed, чтобы избежать лагов */
+    background-attachment: scroll; 
   }
 
   .maintitle {
@@ -621,7 +618,7 @@ button.next { right: 10px; }
 }
 .main-about {
   text-align: center;
-  background-image: url('../photos/13-min-min.jpg');
+  background-image: url('./photos/13-min-min.jpg');
   background-size:cover;
   padding: 50px 20px;
   color: white;
@@ -793,4 +790,5 @@ button.next { right: 10px; }
     flex: 1 1 100%;
   }
 }
+
 
