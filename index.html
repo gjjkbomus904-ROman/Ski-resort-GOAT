@@ -4,17 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Main page</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/slidermain.css">
 </head>
 <body class="body">
 <article id="top"></article>
   <header class="header">
-    <a class="nav-link home" href="index.html"><img src="./photos/icon.png" alt="home" class="home-icon"></a>
+    <a class="nav-link home" href="index.html"><img src="../photos/icon.png" alt="home" class="home-icon"></a>
     <nav class="nav">
-      <button id="accessibility-btn" class="accessibility-btn"><img class ="eye" src="./photos/5219439.png"></button>
-      <a class="nav-link" href="./pages/about2.html">About us</a>
-      <a class="nav-link" href="./pages/contact2.html">Contact us</a>
-      <a class="nav-link" href="#">Blog</a>
+      <button id="accessibility-btn" class="accessibility-btn"><img class ="eye" src="../photos/5219439.png"></button>
+      <a class="nav-link" href="../pages/about2.html">About us</a>
+      <a class="nav-link" href="../pages/contact2.html">Contact us</a>
+      <a class="nav-link" href="../pages/catalog.html">Destinations</a>
       <a class="nav-link" href="#">Your Shortlist</a>
     </nav>
     <div class="profile"><a class="profile-home" href="profile.html">
@@ -22,11 +23,30 @@
   </header>
 
   <section class="main">
-    <h1 class="maintitle">Welcome to the SnowPeak!</h1>
-    <p class="mainsubtitle"><b>Find the best deals and destinations</b></p>
-  </section>
+  <div class="slider">
+    <div class="slides">
+      <img src="../photos/bukovel-kurort-1.jpg" class="slide" alt="Slide 1">
+      <img src="../photos/courchevel-2.jpg" class="slide" alt="Slide 2">
+      <img src="../photos/csm_Gletscherfeeling_Moelltaler_0801_b5dd612600.jpg" class="slide" alt="Slide 3">
 
-<p class="section-title">Top Ski Destinations</p>
+      <div class="slide-text">
+        <h1 class="maintitle">Welcome to the SnowPeak!</h1>
+        <p class="mainsubtitle"><b>Find the best deals and destinations</b></p>
+        <p class="section-title">Top Ski Destinations</p>
+      </div>
+    </div>
+
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+</section>
+
 
   <section class="slider-row">
     <div class="slider-1">
@@ -109,13 +129,13 @@
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-logo-block">
-      <a href="#top"><img src="photos/Snowpeak.png" class="footer-logo-img"></a>
+      <a href="#top"><img src="../photos/Snowpeak.png" class="footer-logo-img"></a>
     </div>
 
       <!-- TOURS + ABOUT -->
       <div class="footer-middle">
         <div class="footer-column">
-          <h3 class="footer-title">Tours</h3>
+          <h3 class="footer-title"><a href="../pages/catalog.html" class = "footer-link">Tours</a></h3>
           <ul class="footer-list">
             <li><a href="#" class="footer-link">Japan</a></li>
             <li><a href="#" class="footer-link">New Zealand</a></li>
@@ -130,8 +150,8 @@
         <div class="footer-column">
           <h4 class="footer-title">About Us</h4>
           <ul class="footer-list">
-            <li><a href="./pages/about2.html" class="footer-link">About Us</a></li>
-            <li><a href="./pages/contact2.html" class="footer-link">Contact us</a></li>
+            <li><a href="../pages/about2.html" class="footer-link">About Us</a></li>
+            <li><a href="../pages/contact2.html" class="footer-link">Contact us</a></li>
             <li><a href="#" class="footer-link">FAQ</a></li>
             <li><a href="#" class="footer-link">Terms and Conditions</a></li>
           </ul>
@@ -149,18 +169,15 @@
     <div class ="underline">
       <p class="footer-bottom">© 2024 SnowPeak. All rights reserved.</p>
       <div class="footer-social">
-          <div class="insta"><a href="https://www.instagram.com/yurmanovych1?igsh=eDNiZWkxOTlzZHBq" target="_blank" class="footer-social-icon"><img src="photos/icons8-instagram-48.png"></a></div>
-          <div class="insta"><a href="https://www.instagram.com/yurmanovych1?igsh=eDNiZWkxOTlzZHBq" target="_blank" class="footer-social-icon"><img src="photos/icons8-instagram-48.png"></a></div>
-          <div class="insta"><a href="https://www.instagram.com/yurmanovych1?igsh=eDNiZWkxOTlzZHBq" target="_blank" class="footer-social-icon"><img src="photos/icons8-instagram-48.png"></a></div>
+          <div class="insta"><a href="https://www.instagram.com/yurmanovych1?igsh=eDNiZWkxOTlzZHBq" target="_blank" class="footer-social-icon"><img src="../photos/icons8-instagram-48.png"></a></div>
+          <div class="insta"><a href="https://www.instagram.com/yurmanovych1?igsh=eDNiZWkxOTlzZHBq" target="_blank" class="footer-social-icon"><img src="../photos/icons8-instagram-48.png"></a></div>
+          <div class="insta"><a href="https://www.instagram.com/yurmanovych1?igsh=eDNiZWkxOTlzZHBq" target="_blank" class="footer-social-icon"><img src="../photos/icons8-instagram-48.png"></a></div>
       </div>
     </div>
   </footer>
-<script src="java/animslides.js"></script>
-<script src="java/script.js"></script>
-<script src="java/accessibility.js"></script>
+<script src="../java/animslides.js"></script>
+<script src="../java/script.js"></script>
+<script src="../java/accessibility.js"></script>
+<script src="../java/slidermain.js"></script>
 </body>
-
 </html>
-
-
-
