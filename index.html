@@ -6,11 +6,12 @@
   <title>Main page</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/slidermain.css">
+  <link rel="stylesheet" href="./css/stylee.css">
 </head>
 <body class="body">
 <article id="top"></article>
   <header class="header">
-    <a class="nav-link home" href="index.html"><img src="./photos/icon.png" alt="home" class="home-icon"></a>
+    <a class="nav-link home" href="index.html"><img src="../photos/icon.png" alt="home" class="home-icon"></a>
     <nav class="nav">
       <button id="accessibility-btn" class="accessibility-btn" alt="eye"><img class ="eye" src="./photos/5219439.png" alt="eye"></button>
       <a class="nav-link" href="./pages/about2.html">About us</a>
@@ -38,8 +39,8 @@
       </div>
     </div>
 
-    <button class="prev">&#10094;</button>
-    <button class="next">&#10095;</button>
+    <button class="prevb">&#10094;</button>
+    <button class="nextb">&#10095;</button>
 
     <div class="dots">
       <span class="dot active"></span>
@@ -126,8 +127,14 @@
 </section>
 </div>
 
-
-
+<div class="coolguys"><h2>How cool can visually impaired skiers and snowboarders be?</h2><p>
+  Visually impaired snowboarders and skiers can be incredibly impressive because their path requires courage, strength, 
+  and a huge amount of personal effort. On the slope, they don’t just ride fast — they often rely on a guide’s voice 
+  and trust their own experience and reaction.
+  These athletes train just as seriously as sighted competitors: they develop technique and the ability to make 
+  instant decisions. Their performances prove that limitations don’t prevent people from achieving great results.
+   They become an example that by believing in yourself and moving forward, it is possible to overcome any challenge.
+</p></div>
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-logo-block">
@@ -175,13 +182,18 @@
       </div>
     </div>
   </footer>
-<script src="java/animslides.js"></script>
-<script src="java/script.js"></script>
-<script src="java/accessibility.js"></script>
-<script src="java/slidermain.js"></script>
+<script src="../java/animslides.js"></script>
+<script src="../java/script.js"></script>
+<script src="../java/accessibility.js"></script>
+<script src="../java/slidermain.js"></script>
+<script>
+    const savedAvatar = localStorage.getItem('avatar');
+    const profileIcon = document.querySelector('.home-profile-alt');
+    if (savedAvatar && profileIcon) {
+      profileIcon.src = savedAvatar;
+    }
+  </script>
 </body>
 
 </html>
-
-
 

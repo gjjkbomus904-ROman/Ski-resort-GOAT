@@ -32,32 +32,26 @@
     object-fit: cover;
 }
 
-/* Navigation buttons */
-.prev, .next {
-    position: absolute;
-    top: 40%;
-    transform: translateY(-50%);
-    background-color: rgba(210, 198, 198, 0.3);
-    border: none;
-    font-size: 2rem;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 50%;
-    background: transparent;
-    border: none; 
+button.prevb, button.nextb {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-90%);
+  background: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s;
+  z-index: 10;
 }
 
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.6);
+button.prevb:hover, button.nextb:hover {
+  background: #eee;
 }
 
-.prev {
-    left: 20px;
-}
-
-.next {
-    right: 20px;
-}
+button.prevb { left: 10px; }
+button.nextb { right: 10px; }
 
 /* Dots */
 .dots {
