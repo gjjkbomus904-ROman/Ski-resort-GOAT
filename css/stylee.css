@@ -325,19 +325,43 @@ textarea {
   text-align: center;
   padding: 60px 20px 40px;
 }
+.Blog {
+  position: relative;
+  background: url('../photos/inspirato.jpg') center/cover no-repeat;
+  background-position: 40% 32.5%;
+  padding: 90px 20px;
+  border-radius: 20px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  overflow: hidden; /* оверлей не вылезает за края */
+}
 
+.blog-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 1; /* под текстом */
+}
+
+.blog-content {
+  position: relative;
+  z-index: 2; /* поверх оверлея */
+}
 .blog-intro h1 {
   font-size: 3rem;
   color: #17304f;
   margin-bottom: 15px;
-  font-weight: 700;
+  font-weight: 800px;
+  font-family: "Inter", Arial, sans-serif;
 }
 
 .blog-intro p {
   font-size: 1.2rem;
   color: #555;
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
+  font-family: "Inter", Arial, sans-serif;
 }
 
 .blog-categories {
@@ -488,4 +512,41 @@ textarea {
     padding: 8px 15px;
     font-size: 0.9rem;
   }
+}
+
+/*shortlist*/
+
+.shortlist-intro {
+  text-align: center;
+  padding: 60px 20px 40px;
+}
+.shortlist {
+  position: relative;
+  background: url('../photos/takibihexatarpArtboard1_1.webp') center/cover no-repeat;
+  background-position: 40% 32.5%;
+  padding: 90px 20px;
+  border-radius: 20px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  overflow: hidden; /* оверлей не вылезает за края */
+}
+
+.shortlist-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 1; /* под текстом */
+}
+
+.shortlist-content {
+  position: relative;
+  z-index: 2; /* поверх оверлея */
+}
+.shortlist-intro h1 {
+  font-size: 3rem;
+  color: #17304f;
+  margin-bottom: 15px;
+  font-weight: 800px;
+  font-family: "Inter", Arial, sans-serif;
 }
