@@ -581,37 +581,19 @@ button.next { right: 10px; }
   margin-top: 50px;
 }
 
-.about-our-story h3 {
-  text-align: center;
-  font-size: 2rem;
-  color: #17304f;
-  margin-bottom: 25px;
-  font-weight: 600;
-}
-
 .history-container {
-  max-width: 97.25%;
-  overflow: hidden;
-  margin-left: 100px;
-  margin-right: 100px;
-  width: auto;
+  max-width: 100%;
   padding: 10px;
   border-radius: 10px;
-  background: #f5f5f5;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  line-height: 1.6;
-  text-align:left;
   font-size: 1.2em;
   color: #091624;
   font-family: 'sans-serif';
-  text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.6);
 }
 
-.history-container h3 {
+.history-container h2 {
   text-align: center;
-  font-size: 28px;
+  font-size: 45px;
   font-weight: bold;
-  margin-bottom: 15px;
 
 }
 .main-about {
@@ -619,7 +601,6 @@ button.next { right: 10px; }
   background-image: url('../photos/13-min-min.jpg');
   background-size:cover;
   padding: 50px 20px;
-  color: white;
   background-position: 40% 32.5%;
   margin-bottom: 0;
 }
@@ -650,7 +631,7 @@ button.next { right: 10px; }
   background-color: white;
   margin: 0 auto;
   border-radius: 10px;
-  padding: 20px 20px 50px 20px;
+  padding: 40px 110px 60px 110px;
   max-width: 85%;
 }
 
@@ -746,7 +727,7 @@ button.next { right: 10px; }
   background-color: white;
   margin: 0 auto;
   border-radius: 10px;
-  padding: 20px 40px 70px 40px;
+  padding: 20px 110px 60px 110px;
   max-width: 83%;
   margin-top: 70px;
   text-align: center;
