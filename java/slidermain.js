@@ -1,5 +1,4 @@
-const slides = document.querySelector(".slides");
-const slideImages = document.querySelectorAll(".slide");
+const slides = document.querySelectorAll(".slide");
 const dots = document.querySelectorAll(".dot");
 const nextBtn = document.querySelector(".nextb");
 const prevBtn = document.querySelector(".prevb");
@@ -7,50 +6,51 @@ const prevBtn = document.querySelector(".prevb");
 let current = 0;
 let interval;
 
-// Показ слайда по индексу
+// Показ слайда
 function showSlide(index) {
-  if (index >= slideImages.length) current = 0;
-  else if (index < 0) current = slideImages.length - 1;
+  if (index >= slides.length) current = 0;
+  else if (index < 0) current = slides.length - 1;
   else current = index;
 
-  // Смещаем контейнер
-  slides.style.transform = `translateX(-${current * 100}%)`;
+  // Скрываем все
+  slides.forEach(s => s.style.display = "none");
+  dots.forEach(dot => dot.classList.remove("active"));
 
-  // Обновляем точки
-  dots.forEach((dot, i) => dot.classList.toggle("active", i === current));
+  // Показываем один
+  slides[current].style.display = "block";
+  dots[current].classList.add("active");
+  setTimeout(showSlides, 4000); // скорость смены
 }
 
-// Следующий / предыдущий
+// Следующий/предыдущий
 function nextSlide() {
   showSlide(current + 1);
 }
-
 function prevSlide() {
   showSlide(current - 1);
 }
 
-// Автоматическая прокрутка
+// Автопрокрутка
 function startAutoSlide() {
   interval = setInterval(nextSlide, 5000);
 }
-
 function stopAutoSlide() {
   clearInterval(interval);
 }
 
-// Обработчики
+// Кнопки
 nextBtn.addEventListener("click", () => {
   stopAutoSlide();
   nextSlide();
   startAutoSlide();
 });
-
 prevBtn.addEventListener("click", () => {
   stopAutoSlide();
   prevSlide();
   startAutoSlide();
 });
 
+// Точки
 dots.forEach((dot, i) => {
   dot.addEventListener("click", () => {
     stopAutoSlide();
@@ -59,6 +59,6 @@ dots.forEach((dot, i) => {
   });
 });
 
-// Инициализация
+// Старт
 showSlide(0);
 startAutoSlide();
