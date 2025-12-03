@@ -320,11 +320,23 @@ textarea {
   color: #17304f;
 }
 
+.sr-errors {
+  margin-bottom: 15px;
+  color: #b30000;
+  font-weight: 600;
+}
+
+.input-error {
+  border-color: #b30000;
+  background: #ffe6e6;
+}
+
 /* Blog Page Styles */
 .blog-intro {
   text-align: center;
   padding: 60px 20px 40px;
 }
+
 .Blog {
   position: relative;
   background: url('../photos/inspirato.jpg') center/cover no-repeat;

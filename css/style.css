@@ -724,7 +724,7 @@ button.next { right: 10px; }
   
   line-height: 1.6;
   text-align:left;
-  overflow-wrap:break-word;
+  overflow-wrap: break-word;
   font-size: 1.1em;
   color: #091624;
   font-family: 'Poppins', sans-serif;   
@@ -762,7 +762,7 @@ button.next { right: 10px; }
   margin-top: 50px;
 }
 
-.about-our-story h3 {
+.about-our-story h2 {
   text-align: center;
   font-size: 2rem;
   color: #17304f;
@@ -788,13 +788,6 @@ button.next { right: 10px; }
   text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.6);
 }
 
-.history h2 {
-  text-align: center;
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 15px;
-
-}
 .main-about {
   text-align: center;
   background-image: url('../photos/13-min-min.jpg');
@@ -826,16 +819,16 @@ button.next { right: 10px; }
   text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
   margin: 0 50px 40px 50px;
   display: flex;
-  justify-content: center; /* горизонтальное выравнивание */
-  align-items: center;     /* вертикальное выравнивание */
-  height: 200px;           /* высота блока, чтобы было куда центрировать */
+  justify-content: center; 
+  align-items: center;     
+  height: 200px;
 }
 
 .small-grid {
   background-color: white;
   margin: 0 auto;
   border-radius: 10px;
-  padding: 20px 20px 50px 20px;
+  padding: 20px 90px 50px 90px;
   max-width: 85%;
 }
 
@@ -931,7 +924,7 @@ button.next { right: 10px; }
   background-color: white;
   margin: 0 auto;
   border-radius: 10px;
-  padding: 20px 40px 70px 40px;
+  padding: 20px 106px 70px 106px;
   max-width: 83%;
   margin-top: 70px;
   text-align: center;
